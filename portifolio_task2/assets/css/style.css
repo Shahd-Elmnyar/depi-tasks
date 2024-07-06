@@ -29,7 +29,7 @@ a{
     background-color: var(--primary-color);
 }
 .showcase {
-    background-image: url('/assets/abstract-dark-blurred-background-smooth-gradient-texture-color-shiny-bright-website-pattern-banner-header-sidebar-graphic-art-image.jpg');
+    background-image: url('../abstract-dark-blurred-background-smooth-gradient-texture-color-shiny-bright-website-pattern-banner-header-sidebar-graphic-art-image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
