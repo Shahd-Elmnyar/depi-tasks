@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>blog</title>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+        <div class="about">
+            <div class="about-content">
+                <h1>About </h1>
+                <p> Hey there! 👋 I'm Shahd , a backend developer with expertise in Laravel.
+                    I have a talent for turning ideas into robust web solutions.
+                    When I'm not coding, you can find me exploring new technologies,
+                    sipping coffee, or lost in a good book.
+                    Join me on this journey as I share insights, tips, and stories about my experiences in the world of web development. Let's connect, learn, and grow together!</p>
+            
+            <div class="btn-container">
+                <a href="" class="main-btn">
+                    <span class="btn-text">Download CV</span>
+                    <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                </a>
+            </div>
+        </div>
+        </div>
+
+    <div id="footer-placeholder"></div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Load the header
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                });
+
+            // Load the footer
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+
+</html>
