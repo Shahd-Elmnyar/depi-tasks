@@ -7,6 +7,6 @@ function computeCircle(radius) {
     };
 }
 
-const circle = computeCircle(5);
+const radius = parseFloat(prompt("Enter the radius of the circle:"));
+const circle = computeCircle(radius);
 console.log(`Area: ${circle.area}, Circumference: ${circle.circumference}`);
-

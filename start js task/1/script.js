@@ -6,5 +6,5 @@ function checkEvenOdd(number) {
     }
 }
 
-console.log(checkEvenOdd(4));
-console.log(checkEvenOdd(7)); 
+var number = parseInt(prompt("Enter a number:"));
+console.log(checkEvenOdd(number));

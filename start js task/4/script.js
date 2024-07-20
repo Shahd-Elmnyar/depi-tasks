@@ -6,7 +6,8 @@ function checkPositiveNegative(num1, num2) {
     }
 }
 
-console.log(checkPositiveNegative(5, -10)); 
-console.log(checkPositiveNegative(-5, 10));
-console.log(checkPositiveNegative(5, 10)); 
-console.log(checkPositiveNegative(-5, -10)); 
+// Changed to prompt for user input
+const num1 = parseFloat(prompt("Enter the first number:")); 
+const num2 = parseFloat(prompt("Enter the second number:")); 
+
+console.log(checkPositiveNegative(num1, num2)); 
