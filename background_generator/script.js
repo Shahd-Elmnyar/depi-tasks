@@ -1,7 +1,6 @@
-
-const color1 = document.querySelector(".color1");
-const color2 = document.querySelector(".color2");
-const body = document.querySelector(".change");
+const color1 = document.getElementById("color1");
+const color2 = document.getElementById("color2");
+const body = document.getElementById("change");
 
 const changeGradient = () => {
     body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
