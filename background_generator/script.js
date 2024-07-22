@@ -8,7 +8,6 @@ var css = document.querySelector("h3");
                     + color1.value + ", "
                     + color2.value + ")";
         
-            css.textContent = body.style.background + ";";
         }
         
         color1.addEventListener("input", changeGradient);
