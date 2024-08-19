@@ -164,13 +164,13 @@ echo $shape ;
 
 $circle = new Circle(5.0, "blue", false);
 echo $circle ;
-echo "Circle Area: " . $circle->getArea() . PHP_EOL;
-echo "Circle Perimeter: " . $circle->getPerimeter() . PHP_EOL;
+echo "Circle Area: " . $circle->getArea() ;
+echo "Circle Perimeter: " . $circle->getPerimeter() ;
 
 $rectangle = new Rectangle(2.0, 4.0, "yellow", true);
-echo $rectangle . PHP_EOL;
-echo "Rectangle Area: " . $rectangle->getArea() . PHP_EOL;
-echo "Rectangle Perimeter: " . $rectangle->getPerimeter() . PHP_EOL;
+echo $rectangle ;
+echo "Rectangle Area: " . $rectangle->getArea() ;
+echo "Rectangle Perimeter: " . $rectangle->getPerimeter() ;
 
 $square = new Square(3.0, "red", false);
 echo $square ;

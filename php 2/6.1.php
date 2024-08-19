@@ -1,7 +1,10 @@
 <?php
-
-// Abstract Superclass Shape
-abstract class Shape
+interface ShapeInterface
+{
+    public function getArea(): float;
+    public function getPerimeter(): float;
+}
+abstract class Shape implements ShapeInterface
 {
     protected string $color;
     protected bool $filled;
@@ -37,13 +40,7 @@ abstract class Shape
         $fillStatus = $this->filled ? "filled" : "Not filled";
         return "Shape[color={$this->color}, filled={$fillStatus}]";
     }
-
-    abstract public function getArea(): float;
-
-    abstract public function getPerimeter(): float;
 }
-
-// Concrete Subclass Circle
 class Circle extends Shape
 {
     private float $radius;
@@ -79,8 +76,6 @@ class Circle extends Shape
         return "Circle[Shape[color={$this->color}, filled={$this->filled}], radius={$this->radius}]";
     }
 }
-
-// Concrete Subclass Rectangle
 class Rectangle extends Shape
 {
     protected float $width;
@@ -128,8 +123,6 @@ class Rectangle extends Shape
         return "Rectangle[Shape[color={$this->color}, filled={$this->filled}], width={$this->width}, length={$this->length}]";
     }
 }
-
-// Concrete Subclass Square
 class Square extends Rectangle
 {
     public function __construct(float $side = 1.0, string $color = "green", bool $filled = true)
@@ -163,8 +156,6 @@ class Square extends Rectangle
         return "Square[Rectangle[Shape[color={$this->color}, filled={$this->filled}], width={$this->width}, length={$this->length}]]";
     }
 }
-
-// Test class to demonstrate polymorphism and method outputs
 function testShapes()
 {
     $shape1 = new Circle(5.5, "red", false);
