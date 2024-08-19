@@ -121,12 +121,12 @@ class Staff extends Person
 }
 
 $person = new Person("Shahd ", "Damietta");
-echo $person . PHP_EOL;
+echo $person ;
 
 
 $student = new Student("Shahd Elmnyar", "Damietta", "Computer Science ", 2, 1500.00);
-echo $student . PHP_EOL;
+echo $student ;
 
 
 $staff = new Staff("Dr. Shahd", "Damietta", "Engineering", 5000.00);
-echo $staff . PHP_EOL;
+echo $staff ;
