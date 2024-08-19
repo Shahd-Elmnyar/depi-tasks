@@ -160,10 +160,10 @@ class Square extends Rectangle
 // Testing the classes
 
 $shape = new Shape();
-echo $shape . PHP_EOL;
+echo $shape ;
 
 $circle = new Circle(5.0, "blue", false);
-echo $circle . PHP_EOL;
+echo $circle ;
 echo "Circle Area: " . $circle->getArea() . PHP_EOL;
 echo "Circle Perimeter: " . $circle->getPerimeter() . PHP_EOL;
 
@@ -173,6 +173,6 @@ echo "Rectangle Area: " . $rectangle->getArea() . PHP_EOL;
 echo "Rectangle Perimeter: " . $rectangle->getPerimeter() . PHP_EOL;
 
 $square = new Square(3.0, "red", false);
-echo $square . PHP_EOL;
-echo "Square Area: " . $square->getArea() . PHP_EOL;
-echo "Square Perimeter: " . $square->getPerimeter() . PHP_EOL;
+echo $square ;
+echo "Square Area: " . $square->getArea() ;
+echo "Square Perimeter: " . $square->getPerimeter() ;
